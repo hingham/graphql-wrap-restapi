@@ -1,0 +1,12 @@
+ type Query{
+     parks: [Park!]!
+ }
+
+ type Park {
+    id: ID!
+    states: String!
+    description: String!
+    name: String!
+ }
+
+
