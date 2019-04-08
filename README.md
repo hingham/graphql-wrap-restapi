@@ -1,6 +1,8 @@
 # graphql-wrap-restapi
 Example of using graphql to wrap a rest API 
 
+[![Build Status](https://www.travis-ci.com/hingham/graphql-wrap-restapi.svg?branch=master)](https://www.travis-ci.com/hingham/graphql-wrap-restapi)
+
 #### [demo](https://graphql-wrap-rest.herokuapp.com/)
 
 
