@@ -4,7 +4,8 @@
   "description": "Example of using graphql to wrap a rest API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
+    "test-watch": "jest --watchAll --verbose",
     "start": "node ./server.js"
   },
   "repository": {
@@ -21,11 +22,14 @@
     "apollo-engine": "^1.1.2",
     "apollo-server-express": "^2.4.8",
     "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "graphql": "^14.1.1",
     "graphql-tools": "^4.0.4",
     "graphql-upload": "^8.0.4",
     "graphql-yoga": "^1.17.4",
+    "jest": "^24.7.1",
+    "jest-config": "^24.7.1",
     "node-fetch": "^2.3.0"
   }
 }

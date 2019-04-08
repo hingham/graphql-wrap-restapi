@@ -1,6 +1,12 @@
-const { GraphQLServer } = require("graphql-yoga");
+require("dotenv").config();
+const express = require('express');
+app = express();
+
+const { ApolloServer } = require("apollo-server-express");
 const fetch = require("node-fetch");
-require("dotenv");
+
+
+console.log(process.env.API_NP_KEY);
 
 console.log("are you alive?");
 
@@ -111,11 +117,21 @@ const resolvers = {
   }
 };
 
-const server = new GraphQLServer({
+// const server = new GraphQLServer({
+//   typeDefs,
+//   resolvers
+// });
+// server.start(() => {
+//   console.log(`Server is running`);
+// });
+
+const server = new ApolloServer({
   typeDefs,
   resolvers
 });
 
-server.start(() => {
-  console.log(`Server is running`);
-});
+app.listen(4000);
+
+server.applyMiddleware({ app });
+
+

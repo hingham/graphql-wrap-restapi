@@ -44,10 +44,14 @@ State parks
 clone the app
 cd into `graphql-wrap-restapi`
 `npm i`
-explore: http://localhost:4000
+explore: http://localhost:4000/graphql
 
 #### Resources:
 [primsma tutorial](https://www.prisma.io/blog/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d)
+
+
+[testing](https://maxrohde.com/2018/12/29/testing-apollo-client-server-applications/
+)
 
 ### GraphQL insights
 `parent` in the resolver functions gives you access to the information retrieved right before the nested query, which is useful if you need to use that data in the next query, such as using the lat long of a park to find the weather. 
