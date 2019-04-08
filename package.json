@@ -1,0 +1,31 @@
+{
+  "name": "graphql-wrap-restapi",
+  "version": "1.0.0",
+  "description": "Example of using graphql to wrap a rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hingham/graphql-wrap-restapi.git"
+  },
+  "author": "hannah ingham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hingham/graphql-wrap-restapi/issues"
+  },
+  "homepage": "https://github.com/hingham/graphql-wrap-restapi#readme",
+  "dependencies": {
+    "apollo-engine": "^1.1.2",
+    "apollo-server-express": "^2.4.8",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-upload": "^8.0.4",
+    "graphql-yoga": "^1.17.4",
+    "node-fetch": "^2.3.0"
+  }
+}
