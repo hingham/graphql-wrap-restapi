@@ -55,6 +55,10 @@ explore: http://localhost:4000/graphql
 [testing](https://maxrohde.com/2018/12/29/testing-apollo-client-server-applications/
 )
 
+* References for writing additional tests
+[graphql-query-test-mock](https://github.com/zth/graphql-query-test-mock)
+[Apollo GraphQL Server Mocks](https://blog.apollographql.com/mocking-your-server-with-just-one-line-of-code-692feda6e9cd)
+
 ### GraphQL insights
 `parent` in the resolver functions gives you access to the information retrieved right before the nested query, which is useful if you need to use that data in the next query, such as using the lat long of a park to find the weather. 
 
