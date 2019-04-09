@@ -5,11 +5,6 @@ app = express();
 const { ApolloServer } = require("apollo-server-express");
 const fetch = require("node-fetch");
 
-
-console.log(process.env.API_NP_KEY);
-
-console.log("are you alive?");
-
 const typeDefs = require("./src/schema.js");
 
 async function feed(parent, args, context, info) {
