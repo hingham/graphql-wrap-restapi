@@ -7,22 +7,24 @@ Example of using graphql to wrap a rest API
 
 
 #### Query Examples:
-All Parks: 
-`query{
+All Parks:
+```
+query{
  parks{
 	name
   latLong
   }
-}`
+}
+```
 
 Park Details
-`query{
+```
+query{
   park(parkCode:"fova"){
     name
     weather(first: 3){
       summary
       data{
-        windSpeed
         time
         temperatureLow
         temperatureHigh
@@ -30,16 +32,19 @@ Park Details
       }
     }
   }
-}`
+}
+```
 
 State parks
-`query{
+```
+query{
   stateParks{
     name
     parkCode
     latLong
   }
-}`
+}
+```
 
 
 ### Starting the App
@@ -51,9 +56,7 @@ explore: http://localhost:4000/graphql
 #### Resources:
 [primsma tutorial](https://www.prisma.io/blog/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d)
 
-
-[testing](https://maxrohde.com/2018/12/29/testing-apollo-client-server-applications/
-)
+[testing article by Max Rohde](https://maxrohde.com/2018/12/29/testing-apollo-client-server-applications/)
 
 * References for writing additional tests
 [graphql-query-test-mock](https://github.com/zth/graphql-query-test-mock)
@@ -64,6 +67,6 @@ explore: http://localhost:4000/graphql
 
 `args` in the resolver functions are the arguments you provide the query and can be used to filter information from the database, or hit to correct end point.
 
-Each field in the `typeDefs` has to be resolved with a resolver function that returns an object. The object resolved must have all the fields as specified on the type object in the typeDefs.
+Each field in the `typeDefs` has to be resolved with a resolver function that returns an object. The object/array of objects resolved must have all the fields as the specified type object typeDefs. 
 
-On the client side, you must provide a root field, and then specify the fields you would like returned. 
+A `root` field is a field that nests other fields. While all properties must be available on the server side, the client can choose to query one or all of those subfields. 
