@@ -1,5 +1,5 @@
-# graphql-wrap-restapi
-Example of using graphql to wrap a rest API 
+# GraphQL Wrapping RESTful APIs 
+This is an example of using graphql to wrap a rest APIs. In other words, use this repositry to learn how to create a backend for your app with graphql that communicates with multiple APIs and connects that data in a graph-like structure according to your schema.  
 
 [![Build Status](https://www.travis-ci.com/hingham/graphql-wrap-restapi.svg?branch=master)](https://www.travis-ci.com/hingham/graphql-wrap-restapi)
 
